@@ -1,5 +1,5 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
 import Button from "../components/Button";
 
 function ContentScript() {
@@ -17,8 +17,8 @@ const index = document.createElement("div");
 index.id = "content-script";
 document.body.appendChild(index);
 
-ReactDOM.createRoot(index).render(
-	<React.StrictMode>
+createRoot(index).render(
+	<StrictMode>
 		<ContentScript />
-	</React.StrictMode>
+	</StrictMode>
 );

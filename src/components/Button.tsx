@@ -1,5 +1,7 @@
-import React from "react";
+import type { ButtonHTMLAttributes } from "react";
 
-const Button = (props: any) => <button {...props} />;
+const Button = (props: ButtonHTMLAttributes<HTMLButtonElement>) => (
+	<button {...props} />
+);
 
 export default Button;

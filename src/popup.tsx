@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import ReactDOM from "react-dom/client";
+import { StrictMode, useState } from "react";
+import { createRoot } from "react-dom/client";
 import logo from "./assets/logo.svg";
 
 function Popup() {
@@ -46,8 +46,8 @@ function Popup() {
 	);
 }
 
-ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
-	<React.StrictMode>
+createRoot(document.getElementById("root") as HTMLElement).render(
+	<StrictMode>
 		<Popup />
-	</React.StrictMode>
+	</StrictMode>
 );
